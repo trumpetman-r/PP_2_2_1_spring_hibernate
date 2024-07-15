@@ -24,11 +24,11 @@ public class MainApp {
       User user2 = new User("Jane", "Doe", "jane.doe@example.com", car2);
       User user3 = new User("Antony", "Hopkins", "antony.hopkins@example.com", car3);
 
-      userService.add(user1);
-      userService.add(user2);
-      userService.add(user3);
+      userService.addUser(user1);
+      userService.addUser(user2);
+      userService.addUser(user3);
 
-      List<User> users = userService.listUsers();
+      List<User> users = userService.getUsers();
       for (User user : users) {
          System.out.println("Id = "+user.getId());
          System.out.println("First Name = "+user.getFirstName());
